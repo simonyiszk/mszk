@@ -9,6 +9,9 @@ const nextConfig = {
 	future: {
 		strictPostcssConfiguration: true,
 	},
+	images: {
+		domains: ["placekitten.com"],
+	},
 	reactStrictMode: true,
 	images: {
 		domains: ["placekitten.com"],

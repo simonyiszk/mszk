@@ -1,4 +1,5 @@
 import { MemberCard } from "@/components/members/MemberCard";
+import { SponsorCard } from "@/components/sponsors/SponsorCard";
 
 export default function Page() {
 	return (
@@ -19,6 +20,23 @@ export default function Page() {
 					image="http://placekitten.com/200/300"
 					name="Kiss József"
 					position="elnök"
+				/>
+			</div>
+			<div className="grid md:grid-cols-3 gap-4">
+				<SponsorCard
+					image="http://placekitten.com/200/300"
+					name="Univer"
+					description="asd asdasd asd"
+				/>
+				<SponsorCard
+					image="http://placekitten.com/200/300"
+					name="Univer"
+					description="asd asdasd asd"
+				/>
+				<SponsorCard
+					image="http://placekitten.com/200/300"
+					name="Univer"
+					description="asd asdasd asd"
 				/>
 			</div>
 		</div>

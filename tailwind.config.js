@@ -5,6 +5,9 @@ module.exports = {
 	darkMode: "class",
 	theme: {
 		extend: {
+			boxShadow: {
+				"mszk-sponsor": "6px 4px 9px rgba(0, 0, 0, 0.25)",
+			},
 			colors: {
 				mszk: {
 					blue: "#19B4D2",

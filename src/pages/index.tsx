@@ -1,9 +1,6 @@
 import { MemberCard } from "@/components/members/MemberCard";
 import { SponsorCard } from "@/components/sponsors/SponsorCard";
-import {
-	OurValuesCard,
-	OurValuesIconType,
-} from "@/components/values/OurValuesCard";
+import { OurValuesCard } from "@/components/values/OurValuesCard";
 
 export default function Page() {
 	return (

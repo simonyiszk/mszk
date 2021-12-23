@@ -9,7 +9,7 @@ module.exports = {
 				"mszk-sponsor": "6px 4px 9px rgba(0, 0, 0, 0.25)",
 			},
 			fontSize: {
-				ourValueHugeNumber: "12rem",
+				"11xl": "12rem",
 			},
 			colors: {
 				mszk: {

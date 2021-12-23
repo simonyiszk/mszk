@@ -5,6 +5,10 @@ module.exports = {
 	darkMode: "class",
 	theme: {
 		extend: {
+			spacing: {
+				200: "50rem",
+			},
+
 			boxShadow: {
 				"mszk-sponsor": "6px 4px 9px rgba(0, 0, 0, 0.25)",
 			},

@@ -1,3 +1,6 @@
+import clsx from "clsx";
+import { useRouter } from "next/router";
+
 import { Footer } from "@/components/footer/Footer";
 import { Header } from "@/components/header/Header";
 
@@ -9,7 +12,14 @@ export function PageLayout({ children }: PageLayoutProps) {
 	return (
 		<div className="flex flex-col min-h-screen">
 			<Header />
-			<main className="flex-1 px-6 mx-auto w-full max-w-7xl">{children}</main>
+			<main
+				className={clsx(
+					"flex-1 mx-auto w-full max-w-7xl",
+					useRouter().pathname === "/" && "lg:-mt-32",
+				)}
+			>
+				{children}
+			</main>
 			<Footer />
 		</div>
 	);

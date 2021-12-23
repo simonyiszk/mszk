@@ -8,6 +8,9 @@ module.exports = {
 			boxShadow: {
 				"mszk-sponsor": "6px 4px 9px rgba(0, 0, 0, 0.25)",
 			},
+			fontSize: {
+				"11xl": "12rem",
+			},
 			colors: {
 				mszk: {
 					blue: "#19B4D2",

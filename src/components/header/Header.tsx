@@ -1,3 +1,4 @@
+import Router from "next/router";
 import { useState } from "react";
 
 import { HamburgerButton } from "@/components/header/HamburgerButton";
@@ -7,6 +8,11 @@ import { HeaderLinkList } from "./HeaderLinkList";
 
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false);
+
+	Router.events.on("routeChangeStart", () => {
+		setIsOpen(false);
+	});
+
 	return (
 		<div className="z-40 w-full">
 			<div className="w-full h-16 xl:h-20 bg-mszk-blue">

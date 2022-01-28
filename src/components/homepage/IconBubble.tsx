@@ -3,7 +3,7 @@ import Image from "next/image";
 
 type IconBubbleProps = {
 	icon: "heart" | "settings" | "chartUp";
-	classnames?: string;
+	className?: string;
 };
 
 const iconSrc = {
@@ -12,12 +12,12 @@ const iconSrc = {
 	chartUp: "/icons/chart_up.svg",
 };
 
-export function IconBubble({ icon, classnames }: IconBubbleProps) {
+export function IconBubble({ icon, className }: IconBubbleProps) {
 	return (
 		<div
 			className={clsx(
 				"flex-shrink-0 p-20 w-80 h-80 rounded-full shadow-lg",
-				classnames,
+				className,
 			)}
 		>
 			<div className="relative w-full h-full">

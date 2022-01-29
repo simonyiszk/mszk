@@ -6,18 +6,3 @@
 html {
 	font-family: roboto;
 }
-
-tbody > tr {
-	border-style: solid;
-	border-color: white;
-	border-width: 4px;
-}
-
-td {
-	text-align: left;
-	padding-left: 4em;
-	padding-right: 4em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	vertical-align: middle;
-}

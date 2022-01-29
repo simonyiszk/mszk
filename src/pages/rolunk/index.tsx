@@ -4,7 +4,7 @@ import { AboutElement } from "@/components/aboutpage/AboutElement";
 import { CourseTable } from "@/components/aboutpage/CourseTable";
 import { ImageStaircase } from "@/components/aboutpage/ImageStaircase";
 import { InnerLayout } from "@/components/layouts/InnerLayout";
-import * as aboutStatic from "@/content/about.json";
+import aboutStatic from "@/content/about.json";
 
 export default function AboutUsPage() {
 	return (

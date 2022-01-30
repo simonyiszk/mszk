@@ -12,7 +12,9 @@ export default function Page() {
 			<IndexUpper />
 			<InnerLayout className="mb-64">
 				<OurValuesPart />
-				<CenterPart />
+			</InnerLayout>
+			<CenterPart />
+			<InnerLayout>
 				<MembersPart members={members} />
 				<SponsorsPart sponsors={sponsors} />
 			</InnerLayout>

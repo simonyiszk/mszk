@@ -3,7 +3,7 @@ import { OurValuesCard } from "../values/OurValuesCard";
 export function OurValuesPart() {
 	return (
 		<div className="my-16">
-			<h1 className="my-16 text-5xl font-bold text-center text-mszk-blue uppercase">
+			<h1 className="my-16 text-4xl lg:text-5xl font-bold text-center text-mszk-blue uppercase">
 				Az MSZK értékrendje
 			</h1>
 			<div className="flex flex-col gap-8 lg:gap-32">

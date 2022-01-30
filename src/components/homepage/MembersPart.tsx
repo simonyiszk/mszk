@@ -7,7 +7,7 @@ export type MembersPartProps = {
 export function MembersPart({ members }: MembersPartProps) {
 	return (
 		<div className="my-16">
-			<h1 className="my-16 text-5xl font-bold text-center text-mszk-blue uppercase">
+			<h1 className="my-16 text-4xl lg:text-5xl font-bold text-center text-mszk-blue uppercase">
 				Vezetőségünk
 			</h1>
 			<div className="flex flex-row justify-center items-center my-8">

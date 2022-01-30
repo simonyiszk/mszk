@@ -16,7 +16,7 @@ export function IconBubble({ icon, className }: IconBubbleProps) {
 	return (
 		<div
 			className={clsx(
-				"flex-shrink-0 p-20 w-80 h-80 rounded-full shadow-lg",
+				"flex-shrink-0 p-4 lg:p-20 w-16 lg:w-64 xl:w-80 h-16 lg:h-64 xl:h-80 rounded-full shadow-lg",
 				className,
 			)}
 		>

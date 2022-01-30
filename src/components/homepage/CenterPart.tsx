@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { IconBubble } from "./IconBubble";
 
 export function CenterPart() {
@@ -22,14 +24,21 @@ export function CenterPart() {
 						megismerhetjük egymást...
 					</p>
 					<div className="flex flex-row justify-center mt-8">
-						<div className="flex flex-row gap-2 text-2xl bg-mszk-blue rounded-xl">
-							<div className="py-4 pr-4 pl-8">
-								<span>Olvass tovább!</span>
-							</div>
-							<span className="flex justify-center items-center w-16 h-full text-5xl font-bold bg-gray-800 rounded-xl">
-								+
-							</span>
-						</div>
+						<Link href="/rolunk/alappillereink">
+							<a
+								title="Alappilléreink"
+								aria-label="Alappilléreink megtekintése"
+							>
+								<div className="flex flex-row gap-2 text-2xl bg-mszk-blue rounded-xl focus:ring-1 cursor-pointer">
+									<div className="py-4 pr-4 pl-8">
+										<span>Olvass tovább!</span>
+									</div>
+									<span className="flex justify-center items-center w-16 h-auto text-5xl font-bold bg-gray-800 rounded-xl">
+										+
+									</span>
+								</div>
+							</a>
+						</Link>
 					</div>
 				</div>
 			</div>

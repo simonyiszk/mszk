@@ -14,7 +14,7 @@ export function MembersPart({ members }: MembersPartProps) {
 				{members
 					.filter((e) => e.order === 1)
 					.map((e) => (
-						<MemberCard {...e} />
+						<MemberCard key={`${e.name} ${e.position} ${e.order}`} {...e} />
 					))}
 			</div>
 			<div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-16">

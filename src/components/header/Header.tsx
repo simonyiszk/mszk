@@ -16,7 +16,7 @@ export function Header() {
 	return (
 		<div className="z-40 w-full">
 			<div className="w-full h-16 xl:h-20 bg-mszk-blue">
-				<header className="flex flex-row justify-between items-center px-6 xl:px-8 lg:my-10 mx-auto max-w-7xl h-full">
+				<header className="flex flex-row justify-between items-center px-6 xl:px-8 mx-auto max-w-7xl h-full">
 					<div className="relative ">
 						<Logo />
 					</div>

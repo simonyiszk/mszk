@@ -21,7 +21,10 @@ export function BankInfo() {
 	return (
 		<div className="flex flex-col gap-y-4 md:gap-y-4 justify-center items-center my-8 lg:text-xl">
 			{bankinfo.map((e) => (
-				<div className="flex flex-col md:flex-row gap-x-2 md:gap-x-8">
+				<div
+					key={e.key}
+					className="flex flex-col md:flex-row gap-x-2 md:gap-x-8"
+				>
 					<div className="w-full font-medium text-center md:text-right uppercase">
 						{e.key}
 					</div>

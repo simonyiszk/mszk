@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { useState } from "react";
 
 type DonationObject = {
-	interval: "once" | "frequently";
+	interval: "ONE_TIME" | "RECURRING";
 	amount: number;
 	surname: string;
 	firstname: string;
@@ -13,7 +13,7 @@ type DonationObject = {
 
 export function PersonDetailsForm() {
 	const [donation, setDonation] = useState<DonationObject>({
-		interval: "once",
+		interval: "ONE_TIME",
 		amount: 1000,
 		surname: "",
 		firstname: "",
@@ -31,18 +31,18 @@ export function PersonDetailsForm() {
 						type="button"
 						className={clsx(
 							"py-2 px-4 w-44 rounded-3xl shadow-mszk-sponsor",
-							donation.interval === "once" && "text-white bg-mszk-blue",
+							donation.interval === "ONE_TIME" && "text-white bg-mszk-blue",
 						)}
-						onClick={() => setDonation({ ...donation, interval: "once" })}
+						onClick={() => setDonation({ ...donation, interval: "ONE_TIME" })}
 					>
 						egyszeri
 					</button>
 					<button
 						type="button"
-						onClick={() => setDonation({ ...donation, interval: "frequently" })}
+						onClick={() => setDonation({ ...donation, interval: "RECURRING" })}
 						className={clsx(
 							"py-2 px-4 w-44 rounded-3xl shadow-mszk-sponsor",
-							donation.interval === "frequently" && "text-white bg-mszk-blue",
+							donation.interval === "RECURRING" && "text-white bg-mszk-blue",
 						)}
 					>
 						rendszeres

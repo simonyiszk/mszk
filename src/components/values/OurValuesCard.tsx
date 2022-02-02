@@ -28,8 +28,8 @@ export function OurValuesCard({
 }: OurValuesCardProps) {
 	return (
 		<Link href="/rolunk" passHref>
-			<a aria-label="További információ rólunk">
-				<div className="relative p-8 w-full max-w-sm h-96 rounded-md focus:ring-1 shadow-lg cursor-pointer">
+			<a aria-label="További információ rólunk" className="w-full">
+				<div className="relative p-8 w-full h-auto rounded-3xl lg:rounded-md focus:ring-1 shadow-lg cursor-pointer">
 					<div className="relative w-24 h-28">
 						<Image src={iconSrc[icon]} layout="fill" priority />
 					</div>
@@ -41,9 +41,6 @@ export function OurValuesCard({
 					<span className="absolute top-0 right-0 -mt-12 text-11xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-transparent select-none">
 						{number}
 					</span>
-					<div className="flex justify-center items-center mx-auto mt-12 w-16 h-16 bg-mszk-blue rounded-full">
-						<span className="text-6xl text-white">+</span>
-					</div>
 				</div>
 			</a>
 		</Link>

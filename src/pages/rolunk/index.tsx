@@ -9,7 +9,7 @@ import aboutStatic from "@/content/about.json";
 export default function AboutUsPage() {
 	return (
 		<InnerLayout>
-			<div className="relative w-full h-96">
+			<div className="relative w-full h-48 lg:h-96">
 				<span className="absolute bottom-0 left-0 z-10 -my-4 lg:-my-8 -mx-4 text-7xl lg:text-11xl font-black text-white select-none">
 					MSZK
 				</span>
@@ -24,7 +24,7 @@ export default function AboutUsPage() {
 			<AboutElement description={aboutStatic.description} />
 
 			<AboutElement title="Szervezeti felépítés">
-				<div className="relative w-full h-200">
+				<div className="relative w-full h-64 lg:h-200">
 					<Image
 						src="/images/org_structure.png"
 						layout="fill"
@@ -46,23 +46,7 @@ export default function AboutUsPage() {
 				title="Misi rendszer"
 				description={aboutStatic["misi-rendszer"].description}
 			>
-				<div className="grid grid-cols-3 gap-4 my-16">
-					<div className="relative w-full h-80">
-						<Image
-							src="https://placekitten.com/g/200/300"
-							objectFit="cover"
-							layout="fill"
-							className="z-0"
-						/>
-					</div>
-					<div className="relative w-full h-80">
-						<Image
-							src="https://placekitten.com/g/200/300"
-							objectFit="cover"
-							layout="fill"
-							className="z-0"
-						/>
-					</div>
+				<div className="my-16">
 					<div className="relative w-full h-80">
 						<Image
 							src="https://placekitten.com/g/200/300"
@@ -82,7 +66,7 @@ export default function AboutUsPage() {
 			<AboutElement
 				title="Beszámolórendszer"
 				description={aboutStatic["beszamolo-rendszer"].description}
-				className="mb-64"
+				className="mb-32"
 			/>
 		</InnerLayout>
 	);

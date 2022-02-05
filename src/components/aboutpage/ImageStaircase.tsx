@@ -37,7 +37,7 @@ export function ImageStaircase() {
 						<Image src={e.image} layout="fill" objectFit="cover" />
 					</div>
 					<h1 className="text-3xl font-medium ">{e.title}</h1>
-					<p className="text-2xl">{e.description}</p>
+					<p className="text-xl lg:text-2xl">{e.description}</p>
 				</div>
 			))}
 		</div>

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 import { AboutElement } from "@/components/aboutpage/AboutElement";
 import { CourseTable } from "@/components/aboutpage/CourseTable";
@@ -56,12 +58,14 @@ export default function AboutUsPage() {
 						/>
 					</div>
 				</div>
-				<div className="flex flex-row gap-8 justify-end items-center">
-					<p className="text-3xl font-semibold">Tovább a galériához!</p>
-					<div className="flex flex-shrink-0 justify-center items-center w-24 h-24 bg-mszk-blue rounded-full">
-						<span className="text-4xl text-white">{"->"}</span>
+				<Link href="/rolunk/galeria" passHref>
+					<div className="flex flex-row gap-8 justify-end items-center cursor-pointer">
+						<p className="text-2xl font-semibold">Tovább a galériához!</p>
+						<div className="text-6xl text-mszk-blue">
+							<BsFillArrowRightCircleFill />
+						</div>
 					</div>
-				</div>
+				</Link>
 			</AboutElement>
 			<AboutElement
 				title="Beszámolórendszer"

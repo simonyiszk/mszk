@@ -19,7 +19,9 @@ export function AboutElement({
 					{title}
 				</h1>
 			)}
-			{description && <p className="text-lg lg:text-2xl ">{description}</p>}
+			{description && (
+				<p className="text-lg lg:text-2xl text-justify">{description}</p>
+			)}
 			<div>{children}</div>
 		</div>
 	);

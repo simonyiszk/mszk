@@ -1,8 +1,8 @@
 import { CenterPart } from "@/components/homepage/CenterPart";
+import { IndexUpper } from "@/components/homepage/IndexUpper";
 import { MembersPart } from "@/components/homepage/MembersPart";
 import { OurValuesPart } from "@/components/homepage/OurValuesPart";
 import { SponsorsPart } from "@/components/homepage/SponsorsPart";
-import { IndexUpper } from "@/components/introduction/IndexUpper";
 import { InnerLayout } from "@/components/layouts/InnerLayout";
 import { members, sponsors } from "@/mock";
 

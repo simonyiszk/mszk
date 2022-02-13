@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export function IndexUpper() {
 	return (
-		<div className="lg:pl-20 mb-96">
-			<div className="w-full h-72 md:h-96 lg:h-200">
-				<div className="w-full h-full bg-cover bg-hero-img rounded-b-2xl lg:rounded-b-none lg:rounded-bl-4xl">
+		<div className="lg:pl-20 mb-96 md:mb-64">
+			<div className="w-full h-72 md:h-96 lg:h-200 2xl:h-160">
+				<div className="w-full h-full bg-cover bg-hero-img rounded-b-3xl lg:rounded-b-none lg:rounded-bl-4xl">
 					<div className="flex flex-col justify-center items-center lg:items-start px-8 lg:px-32 w-full h-full text-center text-white">
 						<h1 className="text-5xl lg:text-7xl font-bold">MSZK</h1>
 						<h2 className="text-3xl lg:text-6xl font-light">
@@ -17,10 +17,10 @@ export function IndexUpper() {
 						<Image src="/icons/building.svg" layout="fill" priority />
 					</div>
 					<div className="flex flex-col col-span-3 lg:col-span-2 gap-4">
-						<h1 className="text-2xl lg:text-3xl font-light uppercase">
+						<h1 className="text-2xl lg:text-3xl 2xl:text-2xl font-light uppercase">
 							A Szakkollégium
 						</h1>
-						<p className="text-base md:text-base lg:text-xl">
+						<p className="text-base md:text-base lg:text-xl 2xl:text-lg">
 							Az első BME-s alapítású szakkollégium, melynek célja, hogy
 							felkészítse tagjait a vezetői szerepre a leadership playground
 							koncepció alkalmazásával. Különlegesen büszkék vagyunk diverz

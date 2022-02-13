@@ -14,7 +14,7 @@ export function PageLayout({ children }: PageLayoutProps) {
 			<Header />
 			<main
 				className={clsx(
-					"flex-1 mx-auto w-full max-w-7xl",
+					"flex-1 mx-auto w-full max-w-6xl",
 					useRouter().pathname === "/" && "lg:-mt-32",
 				)}
 			>

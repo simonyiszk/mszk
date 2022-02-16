@@ -27,6 +27,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"hero-img": "url('http://placekitten.com/g/200/300')",
+				"contact-img": "url('http://placekitten.com/g/200/300')",
 			},
 			transitionTimingFunction: {
 				DEFAULT: defaultTheme.transitionTimingFunction.out,

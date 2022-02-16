@@ -66,7 +66,7 @@ export function EmailFormInputs() {
 					<label htmlFor="form-topic">
 						Téma
 						<select
-							className="py-1 px-2 m-4 font-medium text-white bg-mszk-blue rounded-xl"
+							className="py-1 px-2 m-4 font-medium text-white bg-mszk-blue rounded-lg"
 							value={inputValues.topic}
 							onChange={(e) =>
 								setInputValues({ ...inputValues, topic: e.target.value })
@@ -100,7 +100,7 @@ export function EmailFormInputs() {
 				</div>
 				<div>
 					<button
-						className="py-1 px-4 w-full text-2xl text-white bg-mszk-blue rounded-3xl"
+						className="py-1 px-4 w-full text-2xl text-white bg-mszk-blue rounded-xl"
 						type="button"
 						onClick={() => sendMessage()}
 					>

@@ -6,7 +6,11 @@ const mockdata = {
 		"Szakmaiság, Gyakorlat, Közösség! A szakmai terület biztosítja az MSZK hármas alappillére közül az elsőt. Ez a csapat tervezi, szervezi és irányítja a képzési rendszerünk elemeit és tartja a kapcsolatot az előadókkal. Ezek finanszírozásáért együttműködik a Gazdasági területtel, valamint a mindenkori projektek kurzusainak minőségbiztosításért felel.",
 	coverImg: "http://placekitten.com/g/200/300",
 	title: "Szakmai Terület",
-	personImg: "http://placekitten.com/g/200/300",
+	person: {
+		name: "Nagy András",
+		img: "http://placekitten.com/g/200/300",
+		title: "Vezető",
+	},
 };
 
 export default function FieldsPage() {
@@ -32,11 +36,13 @@ export default function FieldsPage() {
 							folyamat után választanak területet (November eleje).
 						</p>
 					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+						<OneField {...mockdata} />
+						<OneField {...mockdata} />
+						<OneField {...mockdata} />
+					</div>
 				</InnerLayout>
 			</div>
-			<OneField {...mockdata} />
-			<OneField {...mockdata} />
-			<OneField {...mockdata} />
 		</div>
 	);
 }

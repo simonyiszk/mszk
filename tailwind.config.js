@@ -23,6 +23,7 @@ module.exports = {
 					"light-blue": "#87D8E8",
 					green: "#529742",
 					orange: "#E14B32",
+					gray: "#323232",
 				},
 			},
 			backgroundImage: {

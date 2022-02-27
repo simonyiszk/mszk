@@ -1,9 +1,10 @@
 import Image from "next/image";
 
-type MemberCardType = {
+export type MemberCardType = {
 	name: string;
 	image: string;
 	position?: string;
+	order: number;
 };
 // TODO replace to CDN interface
 export function MemberCard({ name, image, position }: MemberCardType) {

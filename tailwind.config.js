@@ -7,6 +7,7 @@ module.exports = {
 		extend: {
 			spacing: {
 				200: "50rem",
+				160: "40rem",
 			},
 			borderRadius: {
 				"4xl": "250px",
@@ -28,6 +29,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"hero-img": "url('http://placekitten.com/g/200/300')",
+				"professionalism-img": "url('http://placekitten.com/g/200/300')",
 			},
 			transitionTimingFunction: {
 				DEFAULT: defaultTheme.transitionTimingFunction.out,

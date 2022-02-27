@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type SponsorCardProps = {
+export type SponsorCardProps = {
 	name: string;
 	image: string;
 	description?: string;

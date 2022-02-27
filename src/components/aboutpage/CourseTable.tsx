@@ -3,25 +3,26 @@ type CourseTableContent = {
 	rhs: string;
 };
 
+const data: CourseTableContent[] = [
+	{
+		lhs: "Üzleti Alapozó Ismeretek kurzus1",
+		rhs: " A tagság üzleti tudásának egy szintre hozása",
+	},
+	{
+		lhs: "Önismereti tréning1",
+		rhs: "fejlődéshez elengedhetetlen a megfelelő önismeret, a képzés ennek alapjait kívánja megadni",
+	},
+	{
+		lhs: "Üzleti Alapozó Ismeretek kurzus2",
+		rhs: " A tagság üzleti tudásának egy szintre hozása",
+	},
+	{
+		lhs: "Önismereti tréning2",
+		rhs: "fejlődéshez elengedhetetlen a megfelelő önismeret, a képzés ennek alapjait kívánja megadni",
+	},
+];
+
 export function CourseTable() {
-	const data: CourseTableContent[] = [
-		{
-			lhs: "Üzleti Alapozó Ismeretek kurzus",
-			rhs: " A tagság üzleti tudásának egy szintre hozása",
-		},
-		{
-			lhs: "Önismereti tréning",
-			rhs: "fejlődéshez elengedhetetlen a megfelelő önismeret, a képzés ennek alapjait kívánja megadni",
-		},
-		{
-			lhs: "Üzleti Alapozó Ismeretek kurzus",
-			rhs: " A tagság üzleti tudásának egy szintre hozása",
-		},
-		{
-			lhs: "Önismereti tréning",
-			rhs: "fejlődéshez elengedhetetlen a megfelelő önismeret, a képzés ennek alapjait kívánja megadni",
-		},
-	];
 	return (
 		<div className="my-16 text-lg lg:text-2xl">
 			<h1 className="py-6 text-3xl font-bold text-center bg-gray-200">
@@ -41,7 +42,11 @@ export function CourseTable() {
 				<div className="flex flex-col divide-y-2 divide-white">
 					{data.map((e) => {
 						return (
-							<div className="flex flex-row gap-y-4 w-full" id="coursesTable">
+							<div
+								key={e.lhs + e.rhs}
+								className="flex flex-row gap-y-4 w-full"
+								id="coursesTable"
+							>
 								<div className="flex items-center py-2 px-2 lg:px-16 w-1/2 font-semibold bg-mszk-light-blue">
 									<h2>{e.lhs}</h2>
 								</div>

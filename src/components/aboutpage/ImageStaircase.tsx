@@ -32,7 +32,10 @@ export function ImageStaircase() {
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-16 my-16 lg:h-200">
 			{stairCaseData.map((e, i) => (
-				<div className={clsx("flex flex-col text-center", align[i])}>
+				<div
+					key={e.title + e.description}
+					className={clsx("flex flex-col text-center", align[i])}
+				>
 					<div className="relative mb-8 w-full h-96">
 						<Image src={e.image} layout="fill" objectFit="cover" />
 					</div>

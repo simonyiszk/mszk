@@ -1,16 +1,18 @@
 import Image from "next/image";
 
 import { InnerLayout } from "@/components/layouts/InnerLayout";
+import { MemberCard } from "@/components/members/MemberCard";
 
 export default function ContactPage() {
 	const phone = "36-1-463-1095";
 	const address =
 		"1111 Budapest, Műegyetem rakpart 3. (K épület) 3. emelet 84.";
+	const fb = "https://www.facebook.com/MSZKofficial/";
 	return (
 		<div className="mb-16">
 			<div className="relative w-full">
 				<div className="relative z-0 w-full h-72 bg-cover bg-contact-img" />
-				<div className="flex absolute z-10 flex-col gap-4 p-8 mx-6 -mt-16 bg-white rounded-lg shadow-lg">
+				<div className="flex absolute right-0 left-0 z-10 flex-col gap-4 p-8 mx-6 lg:mx-32 -mt-16 bg-white rounded-lg shadow-lg">
 					<div className="flex flex-col">
 						<span className="text-sm text-mszk-blue uppercase">Címünk</span>
 						<a
@@ -31,6 +33,19 @@ export default function ContactPage() {
 							className="text-lg font-bold cursor-pointer"
 						>
 							{phone}
+						</a>
+					</div>
+					<div className="flex flex-col">
+						<span className="text-sm text-mszk-blue uppercase">
+							Facebok oldalunk
+						</span>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-lg font-bold cursor-pointer"
+							href={fb}
+						>
+							{fb.replace("https://www.", "")}
 						</a>
 					</div>
 				</div>
@@ -69,6 +84,29 @@ export default function ContactPage() {
 							saját vezeteknev.keresztnev@mszk.bme.hu címén.
 						</p>
 					</div>
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+					<MemberCard
+						image="http://placekitten.com/200/300"
+						name="Kiss József"
+						position="elnök"
+						other="képzés, kurzussal kapcsolatban"
+						email="asd@gmail.com"
+						linkedin="https://linkedin.com"
+					/>
+					<MemberCard
+						image="http://placekitten.com/200/300"
+						name="Kiss József"
+						position="elnök"
+						other="terméktámogatással és promózással kapcsolatban"
+						email="asd@gmail.com"
+						linkedin="https://linkedin.com"
+					/>
+					<MemberCard
+						image="http://placekitten.com/200/300"
+						name="Kiss József"
+						position="elnök"
+					/>
 				</div>
 			</InnerLayout>
 		</div>

@@ -8,10 +8,58 @@ const fields = [
 	{
 		text: "Rólunk",
 		href: "/rolunk",
+		children: [
+			{
+				text: "Alappilléreink",
+				href: "/alappillereink",
+			},
+			{
+				text: "Területeink",
+				href: "/teruleteink",
+			},
+			{
+				text: "Tagok",
+				href: "/tagok",
+			},
+			{
+				text: "Galéria",
+				href: "/galeria",
+			},
+			{
+				text: "GYIK",
+				href: "/gyik",
+			},
+		],
 	},
 	{
 		text: "Projektjeink",
 		href: "/projekteink",
+		children: [
+			{
+				text: "Jelentkezőknek",
+				href: "/jelentkezoknek",
+			},
+			{
+				text: "Consulting Group",
+				href: "/projekt/consulting-group",
+			},
+			{
+				text: "ESET",
+				href: "/projekt/eset",
+			},
+			{
+				text: "Szakmaraton",
+				href: "/projekt/szakmaraton",
+			},
+			{
+				text: "MeMo",
+				href: "/projekt/memo",
+			},
+			{
+				text: "Menedzsment Akadémia",
+				href: "/projekt/menedzsment-akademia",
+			},
+		],
 	},
 	{
 		text: "Jelentkezz",
@@ -25,6 +73,10 @@ const fields = [
 		text: "Kapcsolat",
 		href: "/kapcsolat",
 	},
+	{
+		text: "Támogatás",
+		href: "/tamogatas",
+	},
 ] as HeaderLinkDataType[];
 
 type HeaderLinkListProps = {
@@ -35,7 +87,7 @@ export function HeaderLinkList({ classnames }: HeaderLinkListProps) {
 	return (
 		<ul className={classnames}>
 			{fields.map((e) => (
-				<HeaderLink href={e.href} text={e.text} />
+				<HeaderLink {...e} />
 			))}
 		</ul>
 	);

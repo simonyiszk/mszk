@@ -1,26 +1,59 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
+import { useState } from "react";
 
 export type HeaderLinkDataType = {
 	text: string;
 	href: string;
+	children?: HeaderLinkDataType[];
 };
 
 type HeaderLinkProps = {
 	classnames?: string;
 } & HeaderLinkDataType;
-export function HeaderLink({ text, href, classnames }: HeaderLinkProps) {
+export function HeaderLink({
+	text,
+	href,
+	classnames,
+	children,
+}: HeaderLinkProps) {
+	const [isHover, setIsHover] = useState(false);
+
+	Router.events.on("routeChangeStart", () => {
+		setIsHover(false);
+	});
+
 	return (
-		<Link href={href}>
-			<a
+		<div
+			onMouseEnter={() => setIsHover(true)}
+			onMouseLeave={() => setIsHover(false)}
+		>
+			<Link href={href}>
+				<a
+					className={clsx(
+						classnames,
+						useRouter().pathname === href && "font-bold",
+					)}
+				>
+					{text}
+				</a>
+			</Link>
+			<div
 				className={clsx(
-					classnames,
-					useRouter().pathname === href && "font-bold",
+					isHover && children && children.length > 0
+						? "hidden xl:block"
+						: "hidden",
+					"flex absolute flex-col py-4 px-4 text-black bg-white rounded-lg divide-y-2 shadow-xl",
 				)}
 			>
-				{text}
-			</a>
-		</Link>
+				{children
+					// eslint-disable-next-line etc/no-assign-mutated-array
+					?.sort((a, b) => a.text.localeCompare(b.text))
+					.map((e) => (
+						<HeaderLink key={e.href} {...e} href={href + e.href} />
+					))}
+			</div>
+		</div>
 	);
 }

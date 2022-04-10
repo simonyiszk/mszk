@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Image from "next/image";
 
 import { InnerLayout } from "@/components/layouts/InnerLayout";
@@ -7,7 +8,7 @@ export default function ContactPage() {
 	const phone = "36-1-463-1095";
 	const address =
 		"1111 Budapest, Műegyetem rakpart 3. (K épület) 3. emelet 84.";
-	const fb = "https://www.facebook.com/MSZKofficial/";
+	const fb = "https://www.facebook.com/MSZKofficial";
 	return (
 		<div className="mb-16">
 			<div className="relative w-full">
@@ -54,6 +55,19 @@ export default function ContactPage() {
 								</a>
 							</div>
 						</div>
+					</div>
+					<div className="flex flex-col">
+						<span className="text-sm text-mszk-blue uppercase">
+							Facebook oldalunk
+						</span>
+						<a
+							href={fb}
+							target="_blank"
+							className="text-lg font-bold cursor-pointer"
+							rel="noreferrer"
+						>
+							{fb.replace("https://www.facebook.com/", "@")}
+						</a>
 					</div>
 				</div>
 			</div>

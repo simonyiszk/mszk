@@ -43,31 +43,18 @@ export default function ContactPage() {
 							</div>
 							<div className="flex flex-col">
 								<span className="text-sm text-mszk-blue uppercase">
-									Facebok oldalunk
+									Facebook oldalunk
 								</span>
 								<a
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-lg font-bold cursor-pointer"
 									href={fb}
+									target="_blank"
+									className="text-lg font-bold cursor-pointer"
+									rel="noreferrer"
 								>
-									{fb.replace("https://www.", "")}
+									{fb.replace("https://www.facebook.com/", "@")}
 								</a>
 							</div>
 						</div>
-					</div>
-					<div className="flex flex-col">
-						<span className="text-sm text-mszk-blue uppercase">
-							Facebook oldalunk
-						</span>
-						<a
-							href={fb}
-							target="_blank"
-							className="text-lg font-bold cursor-pointer"
-							rel="noreferrer"
-						>
-							{fb.replace("https://www.facebook.com/", "@")}
-						</a>
 					</div>
 				</div>
 			</div>
